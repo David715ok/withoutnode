@@ -1,5 +1,8 @@
 return {
+  statusCode: 200,
   headers: {
-    'access-control-allow-origin': '*'
-  }
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(response)
 }
