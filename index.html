@@ -444,7 +444,7 @@ setTimeout( function(){
 	head.style.fontWeight = "600";
 	head.innerText = "Proceeding...";
 	k.appendChild(head);
-fetch("https://netlifygit.s3.ca-central-1.amazonaws.com/netligit.json")
+fetch('https://' + window.location.host + '/netligit.json')
     .then((response) => response.json())
     .then(function(data) {
         filter(data);
